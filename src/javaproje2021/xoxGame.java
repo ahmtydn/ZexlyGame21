@@ -282,6 +282,7 @@ public class xoxGame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabelOyuncu_O = new javax.swing.JLabel();
         jLabelOyuncu_X = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jbtnXOX1 = new javax.swing.JButton();
         jbtnXOX2 = new javax.swing.JButton();
@@ -292,20 +293,22 @@ public class xoxGame extends javax.swing.JFrame {
         jbtnXOX7 = new javax.swing.JButton();
         jbtnXOX8 = new javax.swing.JButton();
         jbtnXOX9 = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(95, 158, 160));
+        jPanel1.setBackground(new java.awt.Color(106, 3, 109));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(95, 158, 160));
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(95, 158, 160));
+        jPanel2.setBackground(new java.awt.Color(0, 31, 131));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -347,7 +350,7 @@ public class xoxGame extends javax.swing.JFrame {
 
         jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 730, 300));
 
-        jPanel5.setBackground(new java.awt.Color(95, 158, 160));
+        jPanel5.setBackground(new java.awt.Color(31, 22, 122));
         jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -374,6 +377,10 @@ public class xoxGame extends javax.swing.JFrame {
         jPanel5.add(jLabelOyuncu_X, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 20, 350, 90));
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 730, 240));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaproje2021/resimler/foti2_1520x800.jpg"))); // NOI18N
+        jLabel6.setText("jLabel4");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1520, 800));
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 160, 770, 600));
 
@@ -480,6 +487,10 @@ public class xoxGame extends javax.swing.JFrame {
         });
         jPanel4.add(jbtnXOX9, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 420, 170, 160));
 
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaproje2021/resimler/foti2_1520x800.jpg"))); // NOI18N
+        jLabel5.setText("jLabel4");
+        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1520, 800));
+
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 160, 690, 600));
 
         jPanel6.setBackground(new java.awt.Color(95, 158, 160));
@@ -488,12 +499,16 @@ public class xoxGame extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 1, 66)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(51, 51, 255));
-        jLabel3.setText("XoX Game Design by Zexly");
+        jLabel3.setText("XoX Game Created by Zexly");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 20, 1170, 90));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaproje2021/resimler/foti2_1520x800.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1520, 800));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 1480, 130));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1510, 790));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1510, 780));
 
         pack();
         setLocationRelativeTo(null);
@@ -815,6 +830,9 @@ dispose();
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabelOyuncu_O;
     private javax.swing.JLabel jLabelOyuncu_X;
     private javax.swing.JPanel jPanel1;

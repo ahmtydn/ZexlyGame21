@@ -204,11 +204,11 @@ public class squidgameCAM extends javax.swing.JFrame {
                              if (sayac==imagesOrder.length-1&& kazandin==true) 
                              {
                                  resimGoster(basariliAdim, jLabel_Oyuncu_Bitis);
-                                 jLabel_Sonuc.setText("Oyunu Kazandın. Tebrikler!!!");
+                                 jLabel_Sonuc.setText("Oyuncu 456 oyunu Kazandın. Tebrikler!!!");
                              }
                              else if(kazandin==false)
                              {
-                                 jLabel_Sonuc.setText("Elendin!!!");
+                                 jLabel_Sonuc.setText("Oyuncu 456 Elendin!!!");
                              }
                              sayac++;
                              LabelEtkinlestirme(sayac);
@@ -267,12 +267,16 @@ public class squidgameCAM extends javax.swing.JFrame {
         jButton_Tekrar_Oyna = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(102, 255, 204));
+        jPanel1.setName(""); // NOI18N
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel_Baslangic.setBackground(new java.awt.Color(255, 51, 51));
+        jPanel_Baslangic.setBackground(new java.awt.Color(204, 77, 82));
 
         jLabel_Oyuncu_basla.setBackground(new java.awt.Color(255, 0, 51));
 
@@ -281,7 +285,7 @@ public class squidgameCAM extends javax.swing.JFrame {
         jPanel_BaslangicLayout.setHorizontalGroup(
             jPanel_BaslangicLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel_BaslangicLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(40, Short.MAX_VALUE)
                 .addComponent(jLabel_Oyuncu_basla, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
         );
@@ -292,6 +296,8 @@ public class squidgameCAM extends javax.swing.JFrame {
                 .addComponent(jLabel_Oyuncu_basla, javax.swing.GroupLayout.DEFAULT_SIZE, 69, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        jPanel1.add(jPanel_Baslangic, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 802, 250, -1));
 
         jPanel12.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -370,6 +376,8 @@ public class squidgameCAM extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jPanel1.add(jPanel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 139, -1, -1));
+
         jPanel13.setBackground(new java.awt.Color(0, 0, 0));
 
         jLabel2_2.setOpaque(true);
@@ -433,7 +441,7 @@ public class squidgameCAM extends javax.swing.JFrame {
             jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel6_2, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+                .addComponent(jLabel6_2, javax.swing.GroupLayout.DEFAULT_SIZE, 87, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel5_2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -447,7 +455,9 @@ public class squidgameCAM extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel_Bitis.setBackground(new java.awt.Color(0, 255, 0));
+        jPanel1.add(jPanel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(148, 139, -1, 650));
+
+        jPanel_Bitis.setBackground(new java.awt.Color(0, 132, 137));
 
         javax.swing.GroupLayout jPanel_BitisLayout = new javax.swing.GroupLayout(jPanel_Bitis);
         jPanel_Bitis.setLayout(jPanel_BitisLayout);
@@ -456,7 +466,7 @@ public class squidgameCAM extends javax.swing.JFrame {
             .addGroup(jPanel_BitisLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel_Oyuncu_Bitis, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
         jPanel_BitisLayout.setVerticalGroup(
             jPanel_BitisLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,13 +476,16 @@ public class squidgameCAM extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jLabel_Sonuc.setBackground(new java.awt.Color(51, 51, 255));
-        jLabel_Sonuc.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jPanel1.add(jPanel_Bitis, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 20, 230, -1));
+
+        jLabel_Sonuc.setBackground(new java.awt.Color(0, 132, 137));
+        jLabel_Sonuc.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel_Sonuc.setForeground(new java.awt.Color(255, 255, 0));
         jLabel_Sonuc.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel_Sonuc.setAutoscrolls(true);
         jLabel_Sonuc.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jLabel_Sonuc.setOpaque(true);
+        jPanel1.add(jLabel_Sonuc, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 349, 347, 77));
 
         jButton_Tekrar_Oyna.setBackground(new java.awt.Color(255, 51, 51));
         jButton_Tekrar_Oyna.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -483,70 +496,23 @@ public class squidgameCAM extends javax.swing.JFrame {
                 jButton_Tekrar_OynaActionPerformed(evt);
             }
         });
+        jPanel1.add(jButton_Tekrar_Oyna, new org.netbeans.lib.awtextra.AbsoluteConstraints(476, 458, 347, 74));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 0));
         jLabel1.setText("Tekrar Oyna    :");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(284, 444, -1, 88));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(204, 255, 51));
         jLabel2.setText("Oyun Sonucu :");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(284, 338, -1, 88));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel_Baslangic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jPanel_Bitis, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel1))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel_Sonuc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton_Tekrar_Oyna, javax.swing.GroupLayout.DEFAULT_SIZE, 347, Short.MAX_VALUE))
-                .addContainerGap())
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel_Bitis, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(jPanel12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel_Sonuc, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton_Tekrar_Oyna, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(270, 270, 270)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel_Baslangic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaproje2021/resimler/squid game_840x940.jpg"))); // NOI18N
+        jLabel3.setOpaque(true);
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 940));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 840, 940));
 
         pack();
         setLocationRelativeTo(null);
@@ -687,6 +653,7 @@ public class squidgameCAM extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel2_1;
     private javax.swing.JLabel jLabel2_2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel3_1;
     private javax.swing.JLabel jLabel3_2;
     private javax.swing.JLabel jLabel4_1;
