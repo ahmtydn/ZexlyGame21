@@ -106,7 +106,7 @@ public class xoxGame extends javax.swing.JFrame {
             hamlesayisi=0;
             jbtnXOX2.setBackground(Color.RED);
             jbtnXOX5.setBackground(Color.RED);
-            jbtnXOX9.setBackground(Color.RED);
+            jbtnXOX8.setBackground(Color.RED);
             JOptionPane.showMessageDialog(this,"Oyuncu X Kazandı","XoX" ,JOptionPane.INFORMATION_MESSAGE);
             xCount++;
             oyunSkoru();
@@ -134,7 +134,8 @@ public class xoxGame extends javax.swing.JFrame {
             oyunSkoru();
         } 
       if(z3==("X")&& z5==("X")&& z7==("X"))
-        {
+        {  
+           boyaci();
             hamlesayisi=0;
             jbtnXOX3.setBackground(Color.RED);
             jbtnXOX5.setBackground(Color.RED);

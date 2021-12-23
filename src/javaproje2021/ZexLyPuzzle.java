@@ -49,7 +49,6 @@ public class ZexLyPuzzle extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jLabelTıklamaSayisi = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jButtonYenile = new javax.swing.JButton();
         jButtonCikis = new javax.swing.JButton();
@@ -262,41 +261,25 @@ public class ZexLyPuzzle extends javax.swing.JFrame {
         jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(153, 102, 255), 4));
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        jButton1.setBackground(new java.awt.Color(51, 255, 0));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setText("Kontrol et");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(23, 23, 23)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 224, Short.MAX_VALUE)
-                            .addComponent(jLabelTıklamaSayisi, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabelTıklamaSayisi, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(21, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
+                .addGap(63, 63, 63)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 85, Short.MAX_VALUE)
                 .addComponent(jLabelTıklamaSayisi, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addGap(65, 65, 65))
         );
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 150, -1, 420));
@@ -481,7 +464,7 @@ public class ZexLyPuzzle extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtn_12ActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
-      // Karistir();
+      Karistir();
         
     }//GEN-LAST:event_formWindowActivated
 
@@ -492,7 +475,7 @@ public class ZexLyPuzzle extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonYenileActionPerformed
 
     private void jButtonCozumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCozumActionPerformed
-      
+       CozumSecilirse();
         jBtn_1.setText("1");
         jBtn_2.setText("2");
         jBtn_3.setText("3");
@@ -521,24 +504,6 @@ dispose();
         }
     }//GEN-LAST:event_jButtonCikisActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       jBtn_1.setText("1");
-        jBtn_2.setText("2");
-        jBtn_3.setText("3");
-        jBtn_4.setText("4");
-        jBtn_5.setText("5");
-        jBtn_6.setText("6");
-        jBtn_7.setText("7");
-        jBtn_8.setText("8");
-        jBtn_9.setText("9");
-        jBtn_10.setText("10");
-        jBtn_11.setText("11");
-        jBtn_12.setText("");
-        CozumSecilirse();
-         Sayac=0;
-       jLabelTıklamaSayisi.setText(Integer.toString(Sayac));
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     int Sayac;
     public void bosAlanSecici(JButton but1,JButton but2)
     {
@@ -561,7 +526,7 @@ dispose();
         do
         {
             Random rnd =new Random();
-            siraKontrol=(rnd.nextInt(0,12));
+            siraKontrol=(rnd.nextInt(0,11)+1);
             for(j=1;j<=i;j++)
             {
                 if(bNum[j] == siraKontrol)
@@ -580,6 +545,7 @@ dispose();
                 i=i+1;
             }    
         }
+        
         while(i<=11);
         jBtn_1.setText(String.valueOf(bNum[1]));
         jBtn_2.setText(String.valueOf(bNum[2]));
@@ -594,7 +560,11 @@ dispose();
         jBtn_11.setText(String.valueOf(bNum[11]));
         jBtn_12.setText("");
         
-        
+        for(int a=1;a<12;a++)
+        {
+            System.out.println(bNum[a]);
+            
+        }
         
     
     }
@@ -617,9 +587,14 @@ dispose();
         String z12=jBtn_12.getText();
         
         
-        if(z1=="1" && z2=="2"&& z3=="3" && z4=="4" && z5=="5"
-                && z6=="6" && z7=="7" && z8=="8" && z9=="9"
-                && z10=="10" && z11=="11" && z12=="")
+           
+            
+            
+        
+        
+        if(z1.equals("1") && z2.equals("2")&& z3.equals("3") && z4.equals("4") && z5.equals("5")
+                && z6.equals("6") && z7.equals("7")&& z8.equals("8") && z9.equals("9")
+                && z10.equals("10") && z11.equals("11") && z12.equals(""))
         {
             JOptionPane.showMessageDialog(this,"Kazandın!!!","ZexLyPuzzle",
             JOptionPane.INFORMATION_MESSAGE);
@@ -681,7 +656,6 @@ dispose();
     private javax.swing.JButton jBtn_7;
     private javax.swing.JButton jBtn_8;
     private javax.swing.JButton jBtn_9;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonCikis;
     private javax.swing.JButton jButtonCozum;
     private javax.swing.JButton jButtonYenile;
